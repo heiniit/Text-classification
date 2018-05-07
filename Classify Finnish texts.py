@@ -73,7 +73,9 @@ Jack Kearns ehdotti pokeria. => London
 Kaksi päivää ja kaksi yötä retuutettiin tätä tavaravaunua eteenpäin, pitkässä junajonossa kimakasti viheltävän veturin jäljessä. => London
 Eräänä päivänä tuli sinne pieni kurttuinen mies, joka puhui murteellisesti englantia. => London
 
-Kihlaus: 32.6221224031443 percent Kivi, 67.3778775968557 percent London
 
-Lumikenttien tytär: 3.0692301060436242 percent Kivi, 96.93076989395638 percent London
+Kihlaus (Kivi): 32.6221224031443 percent Kivi, 67.3778775968557 percent London
+
+Lumikenttien tytär (London): 3.0692301060436242 percent Kivi, 96.93076989395638 percent London
+
 '''
