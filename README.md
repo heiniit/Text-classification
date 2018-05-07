@@ -1,2 +1,4 @@
 # Text-classification
-Doing some simple text classification using machine learning
+Doing some text classification using machine learning.
+
+
