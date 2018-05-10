@@ -18,7 +18,7 @@ def ClassifyBook(name, url, vectorizer):
     predicted = classifier.predict(test_vector)
     counter = Counter(predicted)
     tot = counter[0]+counter[1]
-    print("\n{0}: {1} percent Kivi, {2} percent London".format(name, 100*counter[0]/tot, 100*counter[1]/tot))
+    print("\n{0}: {1:0.1f} percent Kivi, {2:0.1f} percent London".format(name, 100*counter[0]/tot, 100*counter[1]/tot))
 
 
 # Use a couple of books as a training material
@@ -73,8 +73,8 @@ Jack Kearns ehdotti pokeria. => London
 Kaksi päivää ja kaksi yötä retuutettiin tätä tavaravaunua eteenpäin, pitkässä junajonossa kimakasti viheltävän veturin jäljessä. => London
 Eräänä päivänä tuli sinne pieni kurttuinen mies, joka puhui murteellisesti englantia. => London
 
-Kihlaus (Kivi): 32.6221224031443 percent Kivi, 67.3778775968557 percent London
+Kihlaus (Kivi): 32.6 percent Kivi, 67.4 percent London
 
-Lumikenttien tytär (London): 3.0692301060436242 percent Kivi, 96.93076989395638 percent London
+Lumikenttien tytär (London): 3.1 percent Kivi, 96.9 percent London
 
 '''
