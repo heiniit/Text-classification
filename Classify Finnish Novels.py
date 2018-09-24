@@ -8,6 +8,8 @@ Created on Tue Jul  3 13:16:12 2018
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.naive_bayes import MultinomialNB
+from sklearn.svm import SVC
+from sklearn.neighbors import KNeighborsClassifier
 from collections import Counter
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -41,8 +43,10 @@ vectorizer = TfidfVectorizer(analyzer="word")
 #vectorizer = TfidfVectorizer(analyzer="char", ngram_range=(2, 3))
 vectors = vectorizer.fit_transform(train["data"])
 
-# Train naive Bayes
-classifier = MultinomialNB()
+# Train the model
+classifier = MultinomialNB() # Naive Bayes
+#classifier = KNeighborsClassifier() # Nearest neighbours
+#classifier = SVC(kernel='linear') # Support Vector Machine, linear kernel
 classifier.fit(vectors, train.target)
 
 # Classify each of three test sets
