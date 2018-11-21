@@ -12,10 +12,13 @@ from sklearn.naive_bayes import MultinomialNB
 # Training data
 categories = ["alt.atheism", "soc.religion.christian", "comp.graphics", "sci.med"]
 newsgroups_train = fetch_20newsgroups(subset='train',categories=categories)
+print(len(newsgroups_train.data))
+#print(newsgroups_train.data[0])
 
 # Vectorize and normalize
 vectorizer = TfidfVectorizer()
 train_vectors = vectorizer.fit_transform(newsgroups_train.data)
+print(train_vectors.shape)
 
 # Train naive Bayes
 classifier = MultinomialNB()
